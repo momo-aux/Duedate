@@ -1,0 +1,146 @@
+.menu-icon > i, .input-addon-item > div > a > i,.project-header > div > div > a > i,.dropdown-submenu-open > li > a > i ,.dropdown-submenu-open > li > span > a > i {
+	color: #000 !important;
+}
+.task-board-icons {
+	margin-top: 5px;
+	text-align: left;
+	height: 100%;
+	float: left;
+	width: 38.2%;
+}
+
+.task-board-title {
+	vertical-align: top;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float:right;
+	width:61.8%;
+}
+.task-board-date, .task-board-icons-row {
+	float: left;
+}
+.task-board-icons-row {
+	clear: both;
+}
+
+.tooltip-large {
+  width: 300px
+}
+
+.task-board-expanded {
+	min-height:50px;
+	vertical-align: top;
+	text-align: left;
+
+	overflow: hidden;
+}
+
+.task-board a {
+	color: #fff;
+}
+.task-board {
+    margin-bottom: 1px;
+    border: 0px;
+    margin-top: 1px;
+    font-size: 1em;
+    border-radius: 0px;
+    padding: 0px;
+}
+
+span.task-date-overdue {
+    color: #f0421d;
+}
+
+.task-board-icons a,.task-board-icons span{
+    opacity: 1;
+}
+
+.title-container {
+	display: none;
+}
+
+.board-add-icon {
+	float: none;
+	font-size: 0.4em;
+	text-align: left;
+}
+
+.notification {
+	opacity:0;
+}
+
+.menus-container {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.board-column-title {
+    color: #fff;
+}
+
+table th {
+    background: #898989;
+    padding: 0.1em;
+    text-align: center;
+}
+table td {
+    padding: 0;
+    border: 1px solid #fff;
+}
+
+
+table th a {
+    color: #FFF;
+}
+table {
+    background-color: #ebecec;
+}
+
+a .fa {
+    color: #FFF;
+}
+
+div.task-board-icons-row > a > i {
+    color: #898989;
+}
+
+.task-board.color-blue, .task-summary-container.color-blue, .color-picker-square.color-blue {
+    background-color: #66c3d0;
+    border-color: #66c3d0;
+    color:#898989;
+}
+
+.task-board.color-red, .task-summary-container.color-red, .color-picker-square.color-red {
+    background-color: #e31e24;
+    border-color: #e31e24;
+    color:#898989;
+}
+.duedate-menu-button {
+	position: absolute;
+	z-index: 1000;
+}
+.project-header {
+	display: none;
+}
+
+@media (max-width: 560px) {
+	.views li {
+		white-space: nowrap;
+		background: #fafafa;
+		border: 1px solid #ddd;
+		border-right: none;
+		padding: 4px 8px;
+		display: inline;
+		border-radius: 0px;
+	}
+}
+
+header {
+    border-bottom: 0px;
+    background-image: url(../img/logo.png),url(../img/logo_small.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: right 50% top 10px, right 10px top 10px;
+    height: 90px;
+}
