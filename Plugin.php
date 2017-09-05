@@ -23,7 +23,7 @@ class Plugin extends Base
 		$this->route->addRoute('duedate/:project_id', 'DueDateAjaxController', 'reload', 'plugin');
 		$this->route->addRoute('duedate/:project_id/timestamp/:timestamp', 'DueDateAjaxController', 'check', 'plugin');
 		
-		$this->hook->on('template:layout:css', array('template' => 'plugins/Duedate/Assets/css/skin.css'));
+		//$this->hook->on('template:layout:css', array('template' => 'plugins/Duedate/Assets/css/skin.css'));
 		$this->hook->on('template:layout:js', array('template' => 'plugins/Duedate/Assets/js/js.cookie.js'));
 		$this->hook->on('template:layout:js', array('template' => 'plugins/Duedate/Assets/js/duedate.js')); 
 		
@@ -37,16 +37,16 @@ class Plugin extends Base
             $colors = array('grey'=>t('Grey'),'blue'=>t('Blue'),'red'=>t('Red'),'green'=>t('Green'));
         });
 		
-		$this->template->setTemplateOverride('header', 'Duedate:header');
+		//$this->template->setTemplateOverride('header', 'Duedate:header');
 		$this->template->setTemplateOverride('app/filters_helper', 'Duedate:app/filters_helper');
 		$this->template->setTemplateOverride('search/activity', 'Duedate:search/activity');
 		$this->template->setTemplateOverride('search/index', 'Duedate:search/index');
 		$this->template->setTemplateOverride('project_header/views', 'Duedate:project_header/views');
 		$this->template->setTemplateOverride('project_header/search', 'Duedate:project_header/search');
-		$this->template->setTemplateOverride('task/sidebar', 'Duedate:task/sidebar');
-		$this->template->setTemplateOverride('task/details', 'Duedate:task/details');
-		$this->template->setTemplateOverride('task_modification/show', 'Duedate:task_modification/show');
-		$this->template->setTemplateOverride('task_creation/show', 'Duedate:task_creation/show');
+		//$this->template->setTemplateOverride('task/sidebar', 'Duedate:task/sidebar');
+		//$this->template->setTemplateOverride('task/details', 'Duedate:task/details');
+		//$this->template->setTemplateOverride('task_modification/show', 'Duedate:task_modification/show');
+		//$this->template->setTemplateOverride('task_creation/show', 'Duedate:task_creation/show');
 	}
 	
 	public function getPluginName()
