@@ -24,7 +24,7 @@ class Plugin extends Base
 		$this->route->addRoute('duedate/:project_id/timestamp/:timestamp', 'DueDateAjaxController', 'check', 'plugin');
 		
 		//$this->hook->on('template:layout:css', array('template' => 'plugins/Duedate/Assets/css/skin.css'));
-		$this->hook->on('template:layout:js', array('template' => 'plugins/Duedate/Assets/js/js.cookie.js'));
+		//$this->hook->on('template:layout:js', array('template' => 'plugins/Duedate/Assets/js/js.cookie.js'));
 		$this->hook->on('template:layout:js', array('template' => 'plugins/Duedate/Assets/js/duedate.js')); 
 		
 		//$this->template->hook->attach('template:project-header:view-switcher', 'Duedate:project_header/views');
