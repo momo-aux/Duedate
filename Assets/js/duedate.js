@@ -1,3 +1,4 @@
+/*/
 window.onload = function() {
 	if (Cookies.get('currentToggle')==='on') {
 		$(".project-header").css('display','block');
@@ -5,6 +6,7 @@ window.onload = function() {
 		$(".project-header").css('display','none');
     }
 };
+//*/
 KB.on('dom.ready', function () {
 
 	function goToLink (selector) {
@@ -21,13 +23,14 @@ KB.on('dom.ready', function () {
         goToLink('a.view-duedate');
     });
 
-	
-	$('.duedate-menu-button').on("click",function(){
+/*/	
+    $('.duedate-menu-button').on("click",function(){
     $(".project-header").slideToggle('slow', function() {
 		// Animation complete.
 		Cookies.set('currentToggle', $(".project-header").is(":visible")?'on':'off' );
 	});
   });
+//*/
 });
 /*/
 var resizeTimer;
